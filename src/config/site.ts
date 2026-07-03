@@ -12,7 +12,7 @@ export const siteConfig = {
   productName: "康析",
   productLogoPath: "/product/kangxi-app-logo.png",
   productSubtitle: "让每天的健康数据，变成看得懂的健康提醒",
-  domain: "https://www.example.com",
+  domain: "https://zkruixi.com",
   contactEmail: "kamsonsam7705@gmail.com",
   contactPhone: "18559663398",
   wechatQrPath: "",
