@@ -357,6 +357,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .footer-main { display: grid; grid-template-columns: .9fr 1.1fr; gap: 60px; padding-top: 65px; padding-bottom: 55px; }
 .footer-brand .brand-symbol { width: 38px; }.footer-brand .brand-lockup small { color: #71899d; }
 .footer-brand > p { margin: 22px 0 0; font-size: 13px; }.footer-brand > .muted { margin-top: 8px; font-size: 11px; }
+.footer-contact { display: grid; gap: 7px; margin-top: 18px; color: #8fa5b6; font-size: 10px; font-style: normal; line-height: 1.6; }
+.footer-contact a { width: fit-content; transition: color .2s ease; }.footer-contact a:hover { color: white; }
 .footer-links { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px 30px; align-content: start; color: #a8bac8; font-size: 12px; }
 .disclaimer-bar { padding: 21px 0; border-block: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.025); }
 .disclaimer-bar .shell { display: grid; grid-template-columns: 70px 1fr; gap: 18px; }.disclaimer-bar strong { color: #7addce; font-size: 10px; }.disclaimer-bar p { margin: 0; color: #8399aa; font-size: 9px; line-height: 1.8; }

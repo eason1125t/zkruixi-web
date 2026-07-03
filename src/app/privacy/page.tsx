@@ -1,5 +1,6 @@
 /**
- * 隐私政策模板页：说明康析计划采用的数据处理原则，并突出上线前法律审核状态。
+ * 隐私政策模板页：说明康析计划采用的数据处理原则，
+ * 并从 siteConfig 引用公司主体和公开联系资料。
  */
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/LegalPage";
@@ -20,7 +21,15 @@ export default function PrivacyPage() {
       <section><h2>四、家庭成员与数据共享</h2><p>家庭成员使用独立账号。任何状态或数据共享均应以成员主动授权为前提，用户可以调整或撤回授权。未授权成员不能查看完整隐私数据。</p></section>
       <section><h2>五、数据安全与用户权利</h2><p>我们计划采用与数据敏感程度相匹配的传输、存储和访问控制措施。用户将可以查询、更正、撤回授权或申请删除其个人信息，具体路径将在正式版本中说明。</p></section>
       <section><h2>六、第三方与跨境处理</h2><p>如未来需要第三方技术服务，我们将在正式政策中说明服务类型、处理目的和数据范围，不向无关第三方出售个人健康数据。</p></section>
-      <section><h2>七、联系我们</h2><p>隐私相关联系邮箱、电话与联系地址当前待公司补充，补充后将统一更新。</p></section>
+      <section>
+        <h2>七、联系我们</h2>
+        <p>
+          如对本政策或个人信息处理有疑问，可发送邮件至
+          <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>，
+          致电<a href={`tel:${siteConfig.contactPhone}`}>{siteConfig.contactPhone}</a>，
+          或联系营业地址：{siteConfig.companyAddress}。
+        </p>
+      </section>
     </LegalPage>
   );
 }

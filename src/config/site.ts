@@ -13,10 +13,10 @@ export const siteConfig = {
   productLogoPath: "/product/kangxi-app-logo.png",
   productSubtitle: "让每天的健康数据，变成看得懂的健康提醒",
   domain: "https://www.example.com",
-  contactEmail: "",
-  contactPhone: "",
+  contactEmail: "kamsonsam7705@gmail.com",
+  contactPhone: "18559663398",
   wechatQrPath: "",
-  companyAddress: "",
+  companyAddress: "厦门火炬高新区软件园三期诚毅北大街50号403室B0101",
   companyIntro:
     "厦门泽康睿析科技有限责任公司专注于智能穿戴数据与人工智能技术的应用，通过清晰、易理解的数字化产品，帮助个人与家庭持续了解健康变化。",
   appStatus: "prelaunch" as AppStatus,

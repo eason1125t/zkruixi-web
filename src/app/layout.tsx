@@ -1,5 +1,6 @@
 /**
- * App Router 根布局：注入全站元数据、结构化数据、页头页脚与基础样式。
+ * App Router 根布局：从 siteConfig 读取企业资料并注入全站元数据、
+ * 结构化数据、页头页脚与基础样式。
  */
 import type { Metadata, Viewport } from "next";
 import { Footer } from "@/components/Footer";
@@ -51,6 +52,21 @@ export default function RootLayout({
       alternateName: siteConfig.companyShortName,
       url: siteConfig.domain,
       description: siteConfig.companyIntro,
+      email: siteConfig.contactEmail,
+      telephone: siteConfig.contactPhone,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: siteConfig.companyAddress,
+        addressLocality: "厦门市",
+        addressCountry: "CN",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        email: siteConfig.contactEmail,
+        telephone: siteConfig.contactPhone,
+        availableLanguage: "zh-CN",
+      },
     },
     {
       "@context": "https://schema.org",

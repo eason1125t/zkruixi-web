@@ -1,5 +1,6 @@
 /**
- * 全站页脚：明确公司版权主体，汇总产品、公司、法律页面和备案占位信息。
+ * 全站页脚：从 siteConfig 读取公司主体与公开联系方式，
+ * 并汇总产品、公司、法律页面和备案占位信息。
  */
 import Link from "next/link";
 import { healthDisclaimer, siteConfig } from "@/config/site";
@@ -26,6 +27,11 @@ export function Footer() {
           <p className="muted">
             旗下智能健康管理产品：{siteConfig.productName}
           </p>
+          <address className="footer-contact">
+            <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>
+            <a href={`tel:${siteConfig.contactPhone}`}>{siteConfig.contactPhone}</a>
+            <span>{siteConfig.companyAddress}</span>
+          </address>
         </div>
         <nav className="footer-links" aria-label="页脚导航">
           {footerLinks.map((item) => (

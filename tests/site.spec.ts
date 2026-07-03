@@ -40,6 +40,19 @@ test("首页 CTA 跳转到联系方式页面且不伪造提交成功", async ({ 
   await expect(page.getByText("预约功能将在正式上线前开放")).toBeVisible();
 });
 
+test("联系页展示可用的企业公开资料", async ({ page }) => {
+  await page.goto("/contact");
+  await expect(
+    page.getByRole("link", { name: "kamsonsam7705@gmail.com" }).first(),
+  ).toHaveAttribute("href", "mailto:kamsonsam7705@gmail.com");
+  await expect(
+    page.getByRole("link", { name: "18559663398" }).first(),
+  ).toHaveAttribute("href", "tel:18559663398");
+  await expect(
+    page.getByText("厦门火炬高新区软件园三期诚毅北大街50号403室B0101").first(),
+  ).toBeVisible();
+});
+
 test("关键独立页面可以访问", async ({ page }) => {
   const pages = [
     ["/about", "关于泽康睿析"],
