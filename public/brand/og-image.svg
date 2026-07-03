@@ -1,0 +1,23 @@
+<!-- 官网社交分享占位图：仅使用公司与产品已确认名称，不包含第三方品牌或虚构信息。 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#EAF3FF"/>
+      <stop offset="1" stop-color="#E7F8F5"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2583FF"/>
+      <stop offset="1" stop-color="#18A999"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1020" cy="90" r="260" fill="#2583FF" opacity=".06"/>
+  <circle cx="1030" cy="600" r="330" fill="#18A999" opacity=".06"/>
+  <rect x="90" y="90" width="76" height="76" rx="23" fill="url(#mark)"/>
+  <path d="M108 136c9 0 10-25 19-25s9 34 19 34c5 0 7-9 10-18" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <text x="190" y="137" fill="#0B2035" font-family="Microsoft YaHei, sans-serif" font-size="34" font-weight="700">泽康睿析</text>
+  <text x="90" y="285" fill="#2583FF" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700">旗下智能健康管理产品 · 康析</text>
+  <text x="90" y="370" fill="#0B2035" font-family="Microsoft YaHei, sans-serif" font-size="52" font-weight="700">让每天的健康数据，</text>
+  <text x="90" y="445" fill="#0B2035" font-family="Microsoft YaHei, sans-serif" font-size="52" font-weight="700">变成看得懂的健康提醒</text>
+  <text x="90" y="540" fill="#60798F" font-family="Microsoft YaHei, sans-serif" font-size="22">厦门泽康睿析科技有限责任公司官方网站</text>
+</svg>
