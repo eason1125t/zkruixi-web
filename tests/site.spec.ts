@@ -27,6 +27,7 @@ test("首页明确展示公司主体和康析产品关系", async ({ page }) => 
   );
   await expect(page.getByText(companyName).first()).toBeVisible();
   await expect(page.getByText("泽康睿析旗下智能健康管理产品").first()).toBeVisible();
+  await expect(page.locator('img[alt="康析 App Logo"]')).toHaveCount(2);
   await expect(page.getByText("家庭版").first()).toBeVisible();
   await expect(page.getByText("最多添加 5 名家庭成员").first()).toBeVisible();
 });

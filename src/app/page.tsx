@@ -4,6 +4,7 @@
  */
 import Link from "next/link";
 import { ProductMockup } from "@/components/ProductMockup";
+import { ProductLogo } from "@/components/ProductLogo";
 import { SectionHeading } from "@/components/SectionHeading";
 import {
   healthDisclaimer,
@@ -68,11 +69,17 @@ export default function Home() {
             <i aria-hidden="true" />
             泽康睿析旗下智能健康管理产品
           </span>
-          <p className="product-name">{siteConfig.productName}</p>
+          <div className="product-identity">
+            <ProductLogo priority size="large" />
+            <div>
+              <small>智能健康管理 App</small>
+              <p className="product-name">{siteConfig.productName}</p>
+            </div>
+          </div>
           <h1>{siteConfig.productSubtitle}</h1>
           <p className="hero-lead">
-            康析连接智能手表，持续整理睡眠、心率、血氧和压力等数据，通过 AI
-            分析近期趋势，为你提供健康提醒、改善建议与专业版健康报告。
+            连接智能手表，持续汇总睡眠、心率、血氧和压力等数据。康析通过 AI
+            分析近期趋势，为你提供清晰的健康提醒、行动建议与专业版报告。
           </p>
           <div className="hero-actions">
             <Link className="button" href="/contact">
@@ -107,7 +114,7 @@ export default function Home() {
           center
           eyebrow="公司与产品"
           title="以技术，让健康数据更容易被理解"
-          description={`${siteConfig.companyIntro} 康析是公司面向个人及家庭健康管理推出的当前重点产品。`}
+          description={`${siteConfig.companyIntro} 康析是公司当前面向个人与家庭健康管理推出的重点产品。`}
         />
         <div className="relation-grid">
           <article className="relation-card company-card">
@@ -123,9 +130,9 @@ export default function Home() {
           </article>
           <article className="relation-card product-card">
             <span className="card-index">02 / 旗下产品</span>
-            <div className="relation-icon">康</div>
+            <ProductLogo size="medium" />
             <h3>康析</h3>
-            <p>面向个人与家庭，把日常健康数据转化为清晰、可执行的管理参考。</p>
+            <p>面向个人与家庭，把日常健康数据转化为清晰、易执行的管理参考。</p>
             <ul className="tag-list">
               <li>数据趋势理解</li><li>AI 健康提醒</li>
               <li>专业版健康报告</li><li>家庭健康守护</li>

@@ -10,6 +10,7 @@ export const siteConfig = {
   companyShortName: "泽康睿析",
   companyEnglishName: "",
   productName: "康析",
+  productLogoPath: "/product/kangxi-app-logo.png",
   productSubtitle: "让每天的健康数据，变成看得懂的健康提醒",
   domain: "https://www.example.com",
   contactEmail: "",
@@ -17,7 +18,7 @@ export const siteConfig = {
   wechatQrPath: "",
   companyAddress: "",
   companyIntro:
-    "厦门泽康睿析科技有限责任公司专注于智能穿戴数据、人工智能技术与个人健康管理场景的结合，致力于通过清晰、易理解的数字化产品，帮助用户更好地了解个人及家庭成员的长期健康变化。",
+    "厦门泽康睿析科技有限责任公司专注于智能穿戴数据与人工智能技术的应用，通过清晰、易理解的数字化产品，帮助个人与家庭持续了解健康变化。",
   appStatus: "prelaunch" as AppStatus,
   acaStatus: "planned" as AcaStatus,
   iosDownloadUrl: "",

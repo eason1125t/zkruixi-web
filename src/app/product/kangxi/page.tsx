@@ -4,6 +4,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProductMockup } from "@/components/ProductMockup";
+import { ProductLogo } from "@/components/ProductLogo";
 import { SectionHeading } from "@/components/SectionHeading";
 import { healthDisclaimer, siteConfig } from "@/config/site";
 
@@ -28,11 +29,17 @@ export default function KangxiProductPage() {
       <section className="hero shell">
         <div className="hero-copy">
           <span className="product-label"><i />泽康睿析旗下智能健康管理产品</span>
-          <p className="product-name">{siteConfig.productName}</p>
+          <div className="product-identity">
+            <ProductLogo priority size="large" />
+            <div>
+              <small>泽康睿析旗下产品</small>
+              <p className="product-name">{siteConfig.productName}</p>
+            </div>
+          </div>
           <h1>{siteConfig.productSubtitle}</h1>
           <p className="hero-lead">
-            连接智能手表，连续整理日常健康数据，帮助你理解近期变化、获得管理提醒，
-            并在需要时生成结构清晰的专业版健康报告。
+            连接智能手表，持续整理日常健康数据，帮助你理解近期变化、获得管理提醒，
+            并生成结构清晰的专业版健康报告。
           </p>
           <div className="hero-actions">
             <Link className="button" href="/contact">预约体验</Link>

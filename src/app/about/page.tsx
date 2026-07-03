@@ -52,7 +52,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="当前重点产品"
             title="康析，让日常健康变化更容易理解"
-            description="康析是泽康睿析面向个人及家庭健康管理推出的当前重点产品。网站结构已为未来增加其他产品和业务方向预留扩展空间。"
+            description="康析是泽康睿析当前面向个人与家庭健康管理推出的重点产品；官网结构也为后续产品与业务方向保留了扩展空间。"
           />
           <div className="hero-actions">
             <Link className="button" href="/product/kangxi">了解康析</Link>

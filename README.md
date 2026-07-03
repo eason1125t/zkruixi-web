@@ -41,7 +41,7 @@ npm run check
 
 ## 品牌素材说明
 
-仓库未提供正式公司 Logo。当前 `BrandMark` 和 `public/brand/` 中使用的是临时原创标识，仅用于官网开发与本地验收；正式品牌素材获得确认后应整体替换。网站未使用腾讯、腾讯云、ACA 或其他第三方 Logo。
+当前公司标识采用项目内原创 `BrandMark`，已确认继续用于官网；康析产品标识采用公司提供的 `public/product/kangxi-app-logo.png`。两者在页面中保持明确区分。网站未使用腾讯、腾讯云、ACA 或其他第三方 Logo。
 
 ## 部署边界
 
