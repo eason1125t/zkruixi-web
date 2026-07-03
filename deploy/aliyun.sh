@@ -10,7 +10,9 @@ REPO_URL="https://github.com/eason1125t/zkruixi-web.git"
 NODE_BASE="https://nodejs.org/download/release/latest-v22.x"
 
 echo "[1/7] 安装系统依赖"
-dnf install -y git nginx curl ca-certificates tar xz
+# 宝塔镜像默认可能通过 DNF exclude 屏蔽 Nginx；本次显式解除过滤，
+# 仅安装发行版软件源中的标准 Nginx 包，不修改全局 DNF 配置。
+dnf --disableexcludes=all install -y git nginx curl ca-certificates tar xz
 
 echo "[2/7] 安装 Node.js 22 LTS"
 case "$(uname -m)" in
